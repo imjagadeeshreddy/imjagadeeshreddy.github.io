@@ -1,11 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5b8cff"/>
-      <stop offset="100%" stop-color="#2e54ff"/>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12224d" />
+      <stop offset="100%" stop-color="#4f76ff" />
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
     </linearGradient>
   </defs>
-  <rect width="100" height="100" rx="24" fill="url(#grad)"/>
-  <path d="M34 34L54 50L34 66V34Z" fill="#fff"/>
-  <path d="M64 34H54V66H64C70.6274 66 76 60.6274 76 54V46C76 39.3726 70.6274 34 64 34Z" fill="#fff"/>
+  <rect width="100" height="100" rx="24" fill="url(#bg)" />
+  <circle cx="50" cy="50" r="42" fill="rgba(255,255,255,0.06)" />
+  <circle cx="50" cy="50" r="38" fill="url(#shine)" opacity="0.35" />
+  <text x="50" y="62" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-3">JR</text>
 </svg>
